@@ -1,0 +1,31 @@
+/* TEAM */
+Creator: Ahmad Rizky Nusantara Habibi
+Role: Backend Engineer, Full-Stack Developer & DevOps
+Site: https://habi14.pages.dev
+Location: Mataram, Indonesia
+Twitter: @ahmadh4bibi14
+
+/* COMPANY */
+Company: Jayakarta Halal Center
+Industry: Service
+Services: Halal Sertification
+Website: https://pondokyatimistiqomah.id
+Location: Jakarta, Indonesia
+
+/* TECHNOLOGY */
+Frontend: SvelteKit, TailwindCSS, HTML5, CSS3, JavaScript, TypeScript
+Backend: Node.js
+Hosting: Cloudflare Pages
+SEO: Structured Data (JSON-LD), Local SEO
+Version Control: Git
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: SvelteKit, TailwindCSS, JavaScript, TypeScript
+
+/* THANKS */
+Inspiration: Open Web Community
+Tools: Cloudflare, Google Search Central, Lighthouse, Schema.org
+
+/* NOTE */
+Built with care for performance, accessibility, and humans.

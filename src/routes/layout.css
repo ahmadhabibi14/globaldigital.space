@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-gdn: #005F69;
+	--color-gdn-2: #009474;
+	--color-gdn-3: #89E44C;
+	--color-gdn-light: #D0E7EA;
+	--color-gdn-dark: #182122;
+
+	--font-josefin-sans: 'Josefin Sans Variable', 'sans-serif';
+}
+
+html {
+	@apply font-josefin-sans scroll-smooth;
+}
+
+*::selection {
+	@apply bg-gdn-3 text-gdn-dark;
+}
+
+#nprogress {
+	pointer-events: none;
+}
+#nprogress .bar {
+	@apply bg-gdn! fixed! z-100! top-0! left-0! w-full! h-[3px]!;
+}
