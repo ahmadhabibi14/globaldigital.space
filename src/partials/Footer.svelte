@@ -33,7 +33,7 @@
 						aria-label="Instagram"
 						href="https://www.instagram.com/gdn"
 						target="_blank"
-						class="flex justify-center items-center p-2 rounded-full bg-white hover:bg-white/90 text-gdn"
+						class="flex justify-center items-center p-2 rounded-full bg-gdn-light hover:bg-white/90 text-gdn"
 					>
 						<Icon src={RiLogosInstagramLine} size="22" />
 					</a>
@@ -41,7 +41,7 @@
 						aria-label="Facebook"
 						href="https://www.facebook.com/gdn"
 						target="_blank"
-						class="flex justify-center items-center p-2 rounded-full bg-white hover:bg-white/90 text-gdn"
+						class="flex justify-center items-center p-2 rounded-full bg-gdn-light hover:bg-white/90 text-gdn"
 					>
 						<Icon src={RiLogosFacebookCircleLine} size="22" />
 					</a>
@@ -49,7 +49,7 @@
 						aria-label="YouTube"
 						href="https://www.youtube.com/channel/gdn"
 						target="_blank"
-						class="flex justify-center items-center p-2 rounded-full bg-white hover:bg-white/90 text-gdn"
+						class="flex justify-center items-center p-2 rounded-full bg-gdn-light hover:bg-white/90 text-gdn"
 					>
 						<Icon src={RiLogosYoutubeLine} size="22" />
 					</a>
@@ -57,7 +57,7 @@
 						aria-label="X (Twitter)"
 						href="https://www.x.com/gdn"
 						target="_blank"
-						class="flex justify-center items-center p-2 rounded-full bg-white hover:bg-white/90 text-gdn"
+						class="flex justify-center items-center p-2 rounded-full bg-gdn-light hover:bg-white/90 text-gdn"
 					>
 						<Icon src={RiLogosTwitterXFill} size="19" />
 					</a>
@@ -65,7 +65,7 @@
 						aria-label="WhatsApp"
 						href="https://wa.me/6281213339923"
 						target="_blank"
-						class="flex justify-center items-center p-2 rounded-full bg-white hover:bg-white/90 text-gdn"
+						class="flex justify-center items-center p-2 rounded-full bg-gdn-light hover:bg-white/90 text-gdn"
 					>
 						<Icon src={RiLogosWhatsappLine} size="22" />
 					</a>
@@ -95,7 +95,7 @@
 							src={RiMapMapPinRangeLine}
 						/>
 						<p class="grow">
-							Pejanggik, Praya, Lombok Tengah, Nusa Tenggara Barat 83671, Indonesia
+							Praya, Lombok Tengah, Nusa Tenggara Barat, Indonesia
 						</p>
 					</a>
 					<a

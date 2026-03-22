@@ -18,8 +18,8 @@
 			<div class="flex flex-col gap-2">
 				<h1 class="text-6xl font-bold">Solusi Digital Inovatif untuk Masa Depan Bisnis Anda</h1>
 				<p class="text-xl">
-					Kami membantu membangun identitas digital yang kuat melalui software, website, desain kreatif, dan
-					strategi pemasaran yang efektif.
+					Membantu membangun identitas digital yang kuat melalui software, website, desain kreatif, dan
+					strategi pemasaran yang efektif di era transformasi digital.
 				</p>
 				<div class="flex flex-row justify-center items-center mt-7 gap-3 font-semibold">
 					<a

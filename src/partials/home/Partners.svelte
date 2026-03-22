@@ -17,6 +17,7 @@
 
 <section
 	class="w-full h-auto border-t border-b border-neutral-200 bg-neutral-50 pb-12 px-4 relative mt-16"
+	id="partners"
 >
 	<div class="absolute left-0 right-0 -top-10 z-3 flex justify-center items-center">
 		<div

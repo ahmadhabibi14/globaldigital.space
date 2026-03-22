@@ -6,10 +6,10 @@ Location: Mataram, Indonesia
 Twitter: @ahmadh4bibi14
 
 /* COMPANY */
-Company: Jayakarta Halal Center
+Company: Global Digital Neuro
 Industry: Service
-Services: Halal Sertification
-Website: https://pondokyatimistiqomah.id
+Services: Digital Service
+Website: https://globaldigital.space
 Location: Jakarta, Indonesia
 
 /* TECHNOLOGY */

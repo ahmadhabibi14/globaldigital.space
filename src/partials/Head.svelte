@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SiteName, SiteDesc, SiteBaseUrl, SiteImageUrl, SiteAuthor } from '../lib/constant';
+	import { SiteName, SiteDesc, SiteBaseUrl, SiteImageUrl, SiteAuthor } from '@/lib/constant';
 
 	export let title: string = SiteName;
 	export let path: string = '';
@@ -32,7 +32,7 @@
 	<meta property="og:image:width" content={imgWidth} />
 	<meta property="og:image:height" content={imgHeight} />
 	<meta property="og:image:alt" content={title} />
-	<meta property="og:see_also" content="https://www.instagram.com/pondok_yatim_istiqomah" />
+	<meta property="og:see_also" content="https://www.instagram.com/globaldigitalneuro" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
@@ -43,9 +43,9 @@
 
 	<meta name="DC.title" content="Geo Tag Generator" />
 	<meta name="geo.region" content="ID-JK" />
-	<meta name="geo.placename" content="Jakarta Timur, DKI Jakarta" />
-	<meta name="geo.position" content="-6.333851, 106.902487" />
-	<meta name="ICBM" content="-6.333851, 106.902487" />
+	<meta name="geo.placename" content="Praya, Lombok Tengah, NTB" />
+	<meta name="geo.position" content="-8.702282, 116.268106" />
+	<meta name="ICBM" content="-8.702282, 116.268106" />
 
 	<link href={SiteBaseUrl} rel="canonical" />
 	<link href={SiteBaseUrl} rel="home" />
