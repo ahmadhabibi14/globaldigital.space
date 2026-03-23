@@ -13,7 +13,7 @@
 
 <div
 	id="top"
-	class="top-0 z-99 fixed w-full h-20 flex flex-col items-center justify-center py-auto bg-white/90 backdrop-blur border-b border-b-neutral-200"
+	class="top-0 z-99 fixed w-full h-20 flex flex-col items-center justify-center py-auto bg-white/90 backdrop-blur border-b border-b-neutral-300"
 >
 	<div
 		class="h-full px-4 md:px-0 container max-w-5xl flex flex-row items-center justify-between mx-auto"
