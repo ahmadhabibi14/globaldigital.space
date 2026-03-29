@@ -1,16 +1,29 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 
-	export let src: string;
-	export let alt: string = '';
-	export let classNameContainer: string = '';
-	export let classNameImg: string = '';
-	export let width: string | number | undefined = undefined;
-	export let height: string | number | undefined = undefined;
+	let {
+		src,
+		alt,
+		classNameContainer,
+		classNameImg,
+		width,
+		height,
+		fetchpriority,
+		draggable
+	}: {
+		src: string;
+		alt?: string;
+		classNameContainer?: string;
+		classNameImg?: string;
+		width?: string | number;
+		height?: string | number;
+		fetchpriority?: 'auto' | 'high' | 'low';
+		draggable?: 'true' | 'false';
+	} = $props();
 
-	let loaded = false;
-	let error = false;
-	let isVisible = false;
+	let loaded: boolean = $state(false);
+	let error: boolean = $state(false);
+	let isVisible: boolean = $state(false);
 
 	let container: HTMLDivElement;
 	let observer: IntersectionObserver;
@@ -50,6 +63,8 @@
 			src="/img/placeholder.svg"
 			alt="Placeholder"
 			class="absolute inset-0 w-full h-full object-cover"
+			draggable="false"
+			aria-label="Image placeholder"
 		/>
 	{/if}
 
@@ -65,6 +80,17 @@
 			aria-label={alt}
 			onload={handleLoad}
 			onerror={handleError}
+			loading="lazy"
+			{fetchpriority}
+			{draggable}
+			decoding="async"
+			ondragstart={(
+				e: DragEvent & {
+					currentTarget: EventTarget & HTMLImageElement;
+				}
+			) => {
+				if (draggable === 'false') e.preventDefault();
+			}}
 		/>
 	{/if}
 </div>

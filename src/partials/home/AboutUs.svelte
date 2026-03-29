@@ -46,6 +46,8 @@
 				alt="Our Vision and Mission"
 				classNameContainer="h-[200px] w-full rounded-xl overflow-hidden"
 				classNameImg="object-cover object-center h-full w-full"
+				fetchpriority="high"
+				draggable="false"
 			/>
 			<div class="flex flex-col gap-3">
 				<div class="flex flex-col gap-0.5">

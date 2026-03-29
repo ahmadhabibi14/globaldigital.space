@@ -57,6 +57,8 @@
 					src="/img/illustration/megaphone-dynamic-color.png"
 					alt="Megaphone Illustration"
 					class="absolute -top-12 left-6 w-[330px] h-auto object-contain"
+					draggable="false"
+					ondragstart={e => e.preventDefault()}
 				/>
 				<div class="w-7/12 flex flex-col gap-4 text-gdn-light justify-start">
 					<div class="flex flex-col gap-2">

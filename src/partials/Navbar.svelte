@@ -5,6 +5,7 @@
 	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 	import { NAVBAR_OPEN } from '@/states/navbar';
 	import NavMenuItems from './NavMenuItems.svelte';
+	import { browser } from '$app/environment';
 
 	function closeNavbar() {
 		NAVBAR_OPEN.set(false);
@@ -33,55 +34,58 @@
 				/>
 			</a>
 		</div>
-		<nav class="hidden md:flex flex-row gap-8 items-center justify-center w-fit">
-			<a href="/" class="hover:text-gdn-2">Home</a>
-			<a href="/products" class="hover:text-gdn-2">Products</a>
-			<a href="/profil">
-				<HoverCard.Root openDelay={100} closeDelay={100}>
-					<HoverCard.Trigger class="flex flex-row items-center gap-1 hover:text-gdn-2">
-						<span>About us</span>
-						<Icon src={RiArrowsArrowDownSLine} size="20" className="fill-neutral-400" />
-					</HoverCard.Trigger>
-					<HoverCard.Content class="z-100 px-2 py-3">
-						<div class="flex flex-col text-sm">
-							<a
-								href="/profil#tentang"
-								class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
-							>
-								Profile
-							</a>
-							<a
-								href="/profil#visi"
-								class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
-							>
-								Visiion
-							</a>
-							<a
-								href="/profil#misi"
-								class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
-							>
-								Mission
-							</a>
-							<a
-								href="/profil#struktur"
-								class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
-							>
-								Company Structure
-							</a>
-							<a
-								href="/profil#logo"
-								class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
-							>
-								Logo Meaning
-							</a>
-						</div>
-					</HoverCard.Content>
-				</HoverCard.Root>
-			</a>
-			<a href="/services" class="hover:text-gdn-2">Services</a>
-			<a href="/portfolio" class="hover:text-gdn-2">Portfolio</a>
-			<a href="/posts" class="hover:text-gdn-2">Blogs</a>
-		</nav>
+
+		{#if browser}
+			<nav class="hidden md:flex flex-row gap-8 items-center justify-center w-fit">
+				<a href="/" class="hover:text-gdn-2">Home</a>
+				<a href="/products" class="hover:text-gdn-2">Products</a>
+				<a href="/profil">
+					<HoverCard.Root openDelay={100} closeDelay={100}>
+						<HoverCard.Trigger class="flex flex-row items-center gap-1 hover:text-gdn-2">
+							<span>About us</span>
+							<Icon src={RiArrowsArrowDownSLine} size="20" className="fill-neutral-400" />
+						</HoverCard.Trigger>
+						<HoverCard.Content class="z-100 px-2 py-3">
+							<div class="flex flex-col text-sm">
+								<a
+									href="/profil#tentang"
+									class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
+								>
+									Profile
+								</a>
+								<a
+									href="/profil#visi"
+									class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
+								>
+									Visiion
+								</a>
+								<a
+									href="/profil#misi"
+									class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
+								>
+									Mission
+								</a>
+								<a
+									href="/profil#struktur"
+									class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
+								>
+									Company Structure
+								</a>
+								<a
+									href="/profil#logo"
+									class="block px-4 py-2 hover:bg-gdn-2/10 hover:text-gdn-2 rounded-md"
+								>
+									Logo Meaning
+								</a>
+							</div>
+						</HoverCard.Content>
+					</HoverCard.Root>
+				</a>
+				<a href="/services" class="hover:text-gdn-2">Services</a>
+				<a href="/portfolio" class="hover:text-gdn-2">Portfolio</a>
+				<a href="/posts" class="hover:text-gdn-2">Blogs</a>
+			</nav>
+		{/if}
 		<a
 			href="https://wa.me/62xxxx"
 			class="md:flex hidden w-fit h-fit cursor-pointer py-2 px-8
@@ -89,7 +93,7 @@
 			text-sm flex-row gap-1.5 items-center justify-center"
 		>
 			<Icon src={RiWeatherFlashlightLine} size="17" className="" />
-			<span>Try Now</span>
+			<span>Consult Now</span>
 		</a>
 		<div class="flex md:hidden">
 			<button type="button" onclick={() => ($NAVBAR_OPEN = !$NAVBAR_OPEN)} class="">
@@ -124,16 +128,10 @@
 			]}
 		/>
 		<span class="h-px w-full border-t border-dashed border-gray-300"></span>
-		<NavMenuItems
-			name="Program"
-			links={[
-				{ name: 'Semua Program', link: '/program' }
-			]}
-		/>
+		<NavMenuItems name="Program" links={[{ name: 'Semua Program', link: '/program' }]} />
 		<span class="h-px w-full border-t border-dashed border-gray-300"></span>
 		<a href="/layanan" class="hover:text-qc px-5" onclick={closeNavbar}>Layanan</a>
 		<span class="h-px w-full border-t border-dashed border-gray-300"></span>
 		<a href="/posts" class="hover:text-qc px-5" onclick={closeNavbar}>Artikel</a>
-		
 	</div>
 </aside>

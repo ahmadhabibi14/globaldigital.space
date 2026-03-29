@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Icon, type IconType } from 'svelte-icons-pack';
 	import {
-	RiArrowsArrowRightLine,
+		RiArrowsArrowRightLine,
 		RiBusinessAdvertisementLine,
 		RiBusinessPieChartBoxLine,
 		RiDesignBrush2Line,
